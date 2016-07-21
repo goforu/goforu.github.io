@@ -1,4 +1,4 @@
-@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
+/*@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");*/
 /*************Bootstrap Custom theme*************/
 .navbar-custom {
     background: #b92c28;
@@ -53,14 +53,33 @@
     transform: rotate(0deg);
 }
 
+/*floating btn*/
+.btn-floating {
+    color: #000;
+    line-height: 38px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -25px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    /*-webkit-box-shadow: 5px 10px grey;*/
+    /*-moz-box-shadow: 5px 10px grey;*/
+    /*box-shadow: 0 3px 3px grey inset;*/
+}
+
 /*General*/
 html,
 body {
     height: 100%;
     width: 100%;
 }
-.overlay-dark{
-    background: rgba(0,0,0,0.5);
+
+.overlay-dark {
+    background: rgba(0, 0, 0, 0.5);
 }
 
 /*Home*/
@@ -72,15 +91,16 @@ body {
     background-size: cover;
     height: 100%;
     width: 100%;
+    position: relative;
 }
 
-.wrap-greeting-content{
+.wrap-greeting-content {
     position: absolute;
     text-align: center;
     min-width: 300px;
     left: 50%;
-    top: 50%;
-    padding: 65px;
+    top: 45%;
+    /*padding: 65px;*/
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
 }
@@ -106,7 +126,7 @@ body {
 }
 
 .btn-custom,
-.btn-custom:hover{
+.btn-custom:hover {
     margin-top: 50px;
     color: #fff;
     background: #b92c28;
