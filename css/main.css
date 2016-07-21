@@ -1,20 +1,113 @@
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
+/*************Bootstrap Custom theme*************/
+.navbar-custom {
+    background: #b92c28;
+}
+
+.navbar-custom a {
+    color: #ffffff;
+}
+
+.navbar-custom .nav > li > a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-custom .nav > li > a:focus,
+.navbar-custom .nav > li > a:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.navbar-custom .navbar-toggle .icon-bar {
+    border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+/*toggle bar anim*/
+.navbar-toggle .icon-bar {
+    transition: all 200ms ease-in-out;
+}
+
+.navbar-toggle[aria-expanded=true] .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggle[aria-expanded=true] .middle-bar {
+    opacity: 0;
+}
+
+.navbar-toggle[aria-expanded=true] .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.navbar-toggle .top-bar {
+    transform: rotate(0deg);
+}
+
+.navbar-toggle .middle-bar {
+    opacity: 1;
+}
+
+.navbar-toggle .bottom-bar {
+    transform: rotate(0deg);
+}
+
 /*General*/
 html,
 body {
     height: 100%;
     width: 100%;
 }
+.overlay-dark{
+    background: rgba(0,0,0,0.5);
+}
+
 /*Home*/
 #home {
-    background: url("../images/bg-1.jpg") no-repeat center center;
-    /*background-image: url("../images/bg-1.jpg");*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: center center;*/
-    /*-webkit-filter: grayscale(100%);*/
+    background: url("../images/bg-1.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     height: 100%;
     width: 100%;
+}
+
+.wrap-greeting-content{
+    position: absolute;
+    text-align: center;
+    min-width: 300px;
+    left: 50%;
+    top: 50%;
+    padding: 65px;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.title-large {
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 500%;
+    color: white;
+    /*padding-left: 12%;*/
+    /*padding-right: 12%;*/
+    /*padding-top: 200px;*/
+}
+
+.title-content {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: #eee;
+    /*padding-right:12%;*/
+    /*padding-left: 12%;*/
+}
+
+.title-content .lead {
+    font-size: 120%;
+}
+
+.btn-custom,
+.btn-custom:hover{
+    margin-top: 50px;
+    color: #fff;
+    background: #b92c28;
 }
