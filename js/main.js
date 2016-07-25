@@ -11,7 +11,7 @@
     $(document).ready(function () {
         $(".button-collapse").sideNav();
         $('.collapsible').collapsible();
-        registerFire();
+        //registerFire();
         registerSmoothScroll();
         new WOW().init();
         //$('.wrap-greeting-content').addClass('animated fadeInUp');
@@ -22,7 +22,27 @@
     function registerFire() {
         var options = [
             {
-                selector: '.determinate', offset: 100, callback: function (el) {
+                selector: '#js', offset: 100, callback: function (el) {
+                skillAnim(el);
+            }
+            },
+            {
+                selector: '#html', offset: 100, callback: function (el) {
+                skillAnim(el);
+            }
+            },
+            {
+                selector: '#css', offset: 100, callback: function (el) {
+                skillAnim(el);
+            }
+            },
+            {
+                selector: '#android', offset: 100, callback: function (el) {
+                skillAnim(el);
+            }
+            },
+            {
+                selector: '#java', offset: 100, callback: function (el) {
                 skillAnim(el);
             }
             }
