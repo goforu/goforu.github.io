@@ -148,5 +148,9 @@ body {
 }
 /*about*/
 .container-underline h5{
-    border-bottom: 1px solid;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+#about .img-thumbnail{
+    padding: 8px;
 }

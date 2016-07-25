@@ -1,0 +1,235 @@
+/*floating btn*/
+.btn-home {
+    line-height: 65px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -25px;
+    margin-bottom: 30px;
+    width: 50px;
+    height: 50px;
+    /*-webkit-box-shadow: 5px 10px grey;*/
+    /*-moz-box-shadow: 5px 10px grey;*/
+    /*box-shadow: 0 3px 3px grey inset;*/
+}
+
+/*General*/
+/*@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/materialdesignicons-webfont.eot); !* For IE6-8 *!
+    src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(../fonts/materialdesignicons-webfont.woff2) format('woff2'),
+    url(../fonts/materialdesignicons-webfont.woff) format('woff'),
+    url(../fonts/materialdesignicons-webfont.ttf) format('truetype');
+}*/
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+h5 {
+    color: #b71c1c;
+    /*color: #03a9f4;*/
+}
+
+.title-1, .title-2, .title-3 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.overlay-dark {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.overlay-red{
+    background: rgba(255, 0, 0, 0.2);
+}
+
+.padding-1 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.padding-left-1 {
+    padding-left: 30px;
+}
+
+.padding-left-2 {
+    padding-left: 20px;
+}
+
+.padding-right-5 {
+    padding-right: 15px;
+}
+
+.margin-top {
+    margin-top: 40px
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.text-larger {
+    font-size: 120%;
+}
+
+.text-smaller {
+    font-size: 80%;
+}
+
+.text-huge-smaller {
+    font-size: 60%;
+}
+
+ul.horiz {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.horiz li {
+    display: inline;
+}
+
+.width-fill {
+    width: 100%;
+}
+
+.fill-parent {
+    width: 100%;
+    height: 100%;
+}
+
+.img-small {
+    width: 60px;
+    height: 60px;
+}
+
+.text-italic{
+    font-style: italic;
+}
+
+.hide-opacity{
+    opacity: 0;
+}
+/*Nav*/
+.side-nav-header {
+    background: url("../images/bg-3.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 160px;
+}
+
+.side-nav-header-content {
+    padding: 30px 10px 10px 20px;
+    line-height: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.side-nav > li > a {
+    border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+.side-nav > li > a > i {
+    vertical-align: middle;
+    width: 40px;
+}
+
+/*.side-nav-content{
+    !*line-height: 64px;*!
+    vertical-align: middle;
+}*/
+/*Home*/
+#home {
+    background: url("../images/bg-3.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.wrap-greeting-content {
+    position: absolute;
+    text-align: center;
+    min-width: 300px;
+    left: 50%;
+    top: 45%;
+    /*padding: 65px;*/
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.title-large {
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 500%;
+    color: white;
+    /*padding-left: 12%;*/
+    /*padding-right: 12%;*/
+    /*padding-top: 200px;*/
+}
+
+.title-content {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: #eee;
+    /*padding-right:12%;*/
+    /*padding-left: 12%;*/
+}
+
+.title-content .lead {
+    font-size: 120%;
+}
+
+/*about*/
+.container-underline p {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#about .img-thumbnail {
+    padding: 8px;
+}
+/*skill*/
+#skill ul > li .progress {
+    overflow: visible;/*make sure tooltip will show*/
+}
+
+.badge-tooltips {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 18px;
+    -webkit-transform: translateX(50%) translateY(-180%);
+    transform: translateX(50%) translateY(-180%);
+}
+
+.badge-tooltips:after{
+    border-top: 4px solid #818181;
+    position: absolute;
+    left: 50%;
+    margin-left: -4px;
+    top: 18px;
+    content: "";
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+}
+
+.position-relative{
+    position: relative;
+}
