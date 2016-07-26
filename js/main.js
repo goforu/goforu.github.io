@@ -12,6 +12,7 @@
         $(".button-collapse").sideNav();
         $('.collapsible').collapsible();
         //registerFire();
+        skillInit();
         registerSmoothScroll();
         new WOW().init();
         //$('.wrap-greeting-content').addClass('animated fadeInUp');
@@ -48,6 +49,12 @@
             }
         ];
         Materialize.scrollFire(options);
+    }
+
+    function skillInit(){
+        $('#skill').find('.determinate').each(function(i,p) {
+            $(this).css('width', $(this).text());
+        });
     }
 
     //skill anim

@@ -32,12 +32,7 @@ body {
     width: 100%;
 }
 
-h5 {
-    color: #b71c1c;
-    /*color: #03a9f4;*/
-}
-
-.title-1, .title-2, .title-3 {
+h2,h3 {
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -67,16 +62,17 @@ h5 {
     padding-right: 15px;
 }
 
+.padding-right-bottom-6{
+    padding-right: 8px;
+    padding-bottom: 8px;
+}
+
+.margin-right-bottom-5 {
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
 .margin-top {
     margin-top: 40px
-}
-
-.float-right {
-    float: right;
-}
-
-.float-left {
-    float: left;
 }
 
 .text-larger {
@@ -89,6 +85,10 @@ h5 {
 
 .text-huge-smaller {
     font-size: 60%;
+}
+
+.text-tiny{
+    font-size: 14px;
 }
 
 ul.horiz {
@@ -113,6 +113,11 @@ ul.horiz li {
 .img-small {
     width: 60px;
     height: 60px;
+}
+
+.img-tiny {
+    width: 40px;
+    height: 40px;
 }
 
 .text-italic{
@@ -203,10 +208,32 @@ ul.horiz li {
 #about .img-thumbnail {
     padding: 8px;
 }
+
+/*Career*/
+#career .card-container{
+    padding: 10px;
+}
+
+/*#career .card-title:after{
+    display: block;
+    content: "";
+    border: 1px solid rgba(0,0,0,0.6);
+}*/
+
+#career .card .card-content .card-title{
+    line-height: 1.5;
+}
+
+#career .card .card-content .card-title .card-logo {
+    margin-top: -10px;
+    margin-right: 20px;
+}
 /*skill*/
 #skill ul > li .progress {
     overflow: visible;/*make sure tooltip will show*/
 }
+
+
 
 .badge-tooltips {
     position: absolute;
