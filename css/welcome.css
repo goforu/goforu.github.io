@@ -260,3 +260,15 @@ ul.horiz li {
 .position-relative{
     position: relative;
 }
+/*portfolio*/
+
+#portfolio .collapsible .collapsible-body:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/*contact*/
+#sendMessage{
+    border: 1px grey;
+}

@@ -13,7 +13,7 @@
         $('.collapsible').collapsible();
         //registerFire();
         skillInit();
-        registerSmoothScroll();
+        //registerSmoothScroll();
         new WOW().init();
         //$('.wrap-greeting-content').addClass('animated fadeInUp');
     });
