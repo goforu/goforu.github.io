@@ -1,86 +1,466 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Goforu - Personal Home Page</title>
+    <title>Goforu - Resume</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-theme.css" rel="stylesheet">
-    <!--<link href="css/bootstrap-material-design.css" rel="stylesheet">-->
-    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/materialdesignicons.min.css" media="all"/>
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar navbar-custom navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar top-bar"></span>
-                <span class="icon-bar middle-bar"></span>
-                <span class="icon-bar bottom-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Home</a>
+<div id="preloader">
+    <div class="preloader-container">
+        <div class="preloader-wrapper active">
+            <div class="spinner-layer spinner-red-only">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#">WHAT</a></li>
-                <li><a href="#">WHERE</a></li>
-            </ul>
-        </div>
+        <h6 class="teal-text">加载中...</h6>
     </div>
-</nav>
-
+</div>
 <section id="home">
-    <div class="container-fluid">
+    <div class="navbar-fixed">
+        <nav class="red darken-4" id="nav">
+            <div class="nav-wrapper">
+                <div class="brand-logo hide-on-med-and-down"><a href="#" class="padding-left-1">主页</a></div>
+                <div><a href="#" data-activates="slide-out" class="button-collapse padding-left-2"><i
+                        class="mdi mdi-menu"></i></a></div>
+                <ul class="right hide-on-med-and-down padding-right-5">
+                    <li><a href="#about" class="guide">关于我</a></li>
+                    <li><a href="#career" class="guide">经历</a></li>
+                    <li><a href="#skill" class="guide">技能</a></li>
+                    <li><a href="#portfolio" class="guide">作品集</a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul id="slide-out" class="side-nav blue-">
+            <li class="side-nav-header">
+                <div class="side-nav-header-content white-text">
+                    <img src="images/img-self.jpg" class="circle img-small">
+                    <h6 class="text-larger">周佛佑</h6>
+                    <p>前端/安卓 工程师</p>
+                </div>
+            </li>
+            <li><a href="#about" class="guide sidebar"><i class="mdi mdi-account-circle"></i>关于我</a></li>
+            <li><a href="#career" class="guide sidebar"><i class="mdi mdi-stairs"></i>经历</a></li>
+            <li><a href="#skill" class="guide sidebar"><i class="mdi mdi-trophy"></i>技能</a></li>
+            <li><a href="#portfolio" class="guide sidebar"><i class="mdi mdi-briefcase-check"></i>作品集</a></li>
+        </ul>
+    </div>
+    <div class="container">
         <div class="row">
+            <div class="overlay-dark"></div>
             <div class="wrap-greeting-content">
-                <h1 class="title-large">Web/App Developer</h1>
-                <h3 class="title-content"><span class="lead">Hello</span>, I'm Foyou Zhou loving DIYs.</h3>
-                <a href="#" class="btn btn-custom btn-lg">
-                    <span class="glyphicon glyphicon-hand-right"></span> HIRE ME
+                <h1 class="title-large">前端/安卓 攻城狮</h1>
+                <h5 class="title-content">快来人呐！！！有只程序猿跑路啦~~~~</h5>
+                <a href="#info" class="btn red darken-4 margin-top btn-large guide waves-effect waves-light">
+                    <span class="text-larger">抓捕我</span> <i
+                        class="mdi mdi-send right"></i>
                 </a>
             </div>
-            <a href="#about" class="btn btn-floating">
-                <span class="glyphicon glyphicon-menu-down"></span>
+            <a href="#about" class="btn btn-floating btn-guide white black-text btn-home pulse guide">
+                <i class="mdi mdi-chevron-down grey-text text-darken-3"></i>
             </a>
         </div>
     </div>
 </section>
-<section id="about" class="padding-1">
+
+<section id="about" class="padding-1 ">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-md-4">
-                <h3 class="title-3">Who am I?</h3>
-                <p>
-                    Hello, I’m a UI/UX Designer & Front End Developer from Victoria, Australia. I hold a master degree
-                    of Web Design from the World University.
-                    And scrambled it to make a type specimen book. It has survived not only five centuries
+            <div class="col m12 l4">
+                <h5 class="text-bold red-text text-darken-4">我是谁？</h5>
+                <p class="text-height-2">
+                    程序猿一枚。本科，信息与计算科学专业。目前就职IBM，前端工程师。主要负责javascript业务逻辑实现。毕业一年有余，
+                    本科期间有近两年的安卓开发经历，平时喜欢逛开源社区，并孵有开源项目。如果对我有兴趣，就请联系我吧！
                 </p>
+                <a href="files/resume_zh.pdf" target="_blank" class="btn teal white-text margin-2 waves-effect waves-light" download><i
+                        class="mdi mdi-download"></i>下载简历</a>
             </div>
-            <div class="col-sm-6 col-md-4">
-                <img src="images/self-0.jpg" class="img-responsive img-thumbnail"/>
+            <div class="col m6 l4 hide-opacity" id="self">
+                <img src="images/img-self.jpg" class="responsive-img card img-thumbnail"/>
             </div>
-            <div class="col-sm-6 col-md-4">
-                <h3 class="title-3">Personal Information</h3>
-                <div class="container-underline">
-                    <h5><span>Name:</span>Foyou Zhou</h5>
-                    <h5><span>Email:</span>Foyou Zhou</h5>
-                    <h5><span>Phone:</span>Foyou Zhou</h5>
-                    <h5><span>Address:</span>Foyou Zhou</h5>
-                </div>
+            <div class="col m6 l4" id="info">
+                <h5 class="text-bold red-text text-darken-4">个人信息</h5>
+                <ul class="collection">
+                    <li class="collection-item"><span class="info-header">姓名：</span>周佛佑</li>
+                    <li class="collection-item"><span class="info-header">邮箱：</span>99goforu@gmail.com</li>
+                    <li class="collection-item"><span class="info-header">电话：</span>+86 18583615885</li>
+                    <li class="collection-item"><span class="info-header">地址：</span>北京市海淀区</li>
+                </ul>
+                <ul class="horiz">
+                    <li><a href="https://cn.linkedin.com/in/佛佑-周-b71035b2" target="_blank" class="btn btn-floating white"><i
+                            class="mdi mdi-linkedin red-text text-darken-4"></i></a></li>
+                    <li><a href="https://github.com/goforu"  target="_blank"  class="btn btn-floating white"><i
+                            class="mdi mdi-github-circle red-text text-darken-4"></i></a></li>
+                </ul>
             </div>
         </div>
     </div>
 </section>
 
-section#
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
-<!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
-<script src="js/lib/jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="js/lib/bootstrap.min.js" type="text/javascript"></script>
-<!--<script src="js/lib/material.min.js" type="text/javascript"></script>-->
+<section id="career" class="padding-1 teal">
+    <div class="container">
+        <div class="row">
+            <div class="col l4 m12 white-text">
+                <h2>经历</h2>
+                <p>从小对游戏痴迷，当flash还烂大街时，写了生命中的第一个（也是唯一T_T）游戏《找茬》（虽然思路完全copy的某讯）。
+                    从大二开始，有幸加入学校LSGO开发团队，投身安卓开发伟大工程中。毕业后，加入IBM，成为蓝色大家庭中的一员，主攻前端。</p>
+            </div>
+            <div class="col l4 m6 card-container hide-opacity" id="ibm">
+                <div class="card">
+                    <div class="card-content">
+                   <span class="card-title activator">
+                        <img src="images/img-imb-logo.jpg" class="img-small left card-logo">
+                        2015-至今<i class="mdi mdi-dots-vertical right"></i>
+                        <p class="text-tiny grey-text text-italic">国际商业机器公司</p>
+                    </span>
+                    </div>
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/img-ibm-team.jpg">
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">国际商业机器公司<i
+                                class="mdi mdi-close right"></i></span>
+                        <p>2015年7月于成都入职，隶属GCG GBS AIC部门。因项目调动，11月转北京加入EBanking团队。担任中国银行网银前端的开发。</p>
+                        <p class="text-italic card-reveal-footer">——图为L&K为我们做入职培训。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col l4 m6 card-container hide-opacity" id="ncepu">
+                <div class="card">
+                    <div class="card-content">
+                    <span class="card-title activator">
+                        <img src="images/img-ncepu-logo.jpg" class="img-small left card-logo">
+                        2011-2015<i class="mdi mdi-dots-vertical right  "></i>
+                        <p class="text-tiny grey-text text-italic">华北电力大学</p>
+                    </span>
+                    </div>
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/img-lsgo-team.jpg">
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">华北电力大学<i
+                                class="mdi mdi-close right"></i></span>
+                        <p>本科第二年加入LSGO团队，从此打开mobile开发的大门。但团队主攻Arcgis地理信息系统和C#桌面，mobile之路又只好孤军奋战。（咦，好像一不小心成了创始人，嘿嘿！）</p>
+                        <p class="text-italic card-reveal-footer">——图为2015.6团队留影。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section id="skill" class="padding-1 ">
+    <div class="container">
+        <div class="row">
+            <div class="col l4">
+                <h2 class="red-text text-darken-4">技能</h2>
+                <p>js是工作的主要语言。也写过一些控件，对闭包和原型有较深的理解。会用常用的Html tag和css属性。
+                    （一般都上w3查）以前主攻Android现在好久不用（不过上手应该会很快）。</p>
+            </div>
+            <div class="col l8 fill-parent">
+                <ul id="skillBar">
+                    <li class="hide-opacity">
+                        <h6 class="text-italic">javascript</h6>
+                        <div class="progress" data-tooltip="70%">
+                            <div class="determinate" id="js">
+                                <div class="text-smaller card red white-text badge-tooltips" data-wow-delay="1s">70%
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="hide-opacity">
+                        <h6 class="text-italic">Html</h6>
+                        <div class="progress">
+                            <div class="determinate" id="html">
+                                <div class="text-smaller card red white-text badge-tooltips">40%</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="hide-opacity">
+                        <h6 class="text-italic">Css</h6>
+                        <div class="progress">
+                            <div class="determinate" id="css">
+                                <div class="text-smaller card red white-text badge-tooltips">40%</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="hide-opacity">
+                        <h6 class="text-italic">Android</h6>
+                        <div class="progress">
+                            <div class="determinate">
+                                <div class="text-smaller card red white-text badge-tooltips">50%</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="hide-opacity">
+                        <h6 class="text-italic">Java</h6>
+                        <div class="progress">
+                            <div class="determinate" id="java">
+                                <div class="text-smaller card red white-text badge-tooltips">60%</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="hide-opacity">
+                        <h6 class="text-italic">Photoshop</h6>
+                        <div class="progress">
+                            <div class="determinate" id="photoshop">
+                                <div class="text-smaller card red white-text badge-tooltips">30%</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="portfolio" class="padding-1 ">
+    <div class="container">
+        <div class="row">
+            <h3 class="center grey-text">作品集</h3>
+            <div class="row">
+                <div class="col l4 m8 s12 margin-bottom-5">
+                    <ul class="tabs">
+                        <li class="tab"><a href="#all">全部</a></li>
+                        <li class="tab"><a href="#web"><i class="mdi mdi-internet-explorer"> 前端</i></a></li>
+                        <li class="tab"><a href="#android"><i class="mdi mdi-android"></i> 安卓</a></li>
+                    </ul>
+                </div>
+                <div id="all" class="col s12">
+                    <ul class="img-collection hide-opacity-children" id="gallery">
+                        <li>
+                            <a href="#bank" class="waves-effect waves-light modal-trigger">
+                                <div class="p-overlay"><h5 class="inner-content">中行网银</h5></div>
+                                <img class="responsive-img" src="images/img-work-bank.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#webag" class="waves-effect waves-light modal-trigger">
+                                <div class="p-overlay"><h5 class="inner-content">WEBAG</h5></div>
+                                <img class="responsive-img" src="images/img-work-webag.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#mypage" class="waves-effect waves-light modal-trigger">
+                                <div class="p-overlay"><h5 class="inner-content">个人主页</h5></div>
+                                <img class="responsive-img" src="images/img-work-mypage.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#clock" class="waves-effect waves-light modal-trigger">
+                                <div class="p-overlay"><h5 class="inner-content">梦想计画</h5></div>
+                                <img class="responsive-img" src="images/img-work-clock.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#community" class="waves-effect waves-light modal-trigger">
+                                <div class="p-overlay"><h5 class="inner-content">社区服务平台</h5></div>
+                                <img class="responsive-img" src="images/img-work-community.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="waves-effect waves-light modal-trigger">
+                                <div class="p-overlay"><h5 class="inner-content">一键去重</h5></div>
+                                <img class="responsive-img" src="images/img-work-contact.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="web" class="col s12">
+                    <ul class="img-collection hide-opacity-children" id="gallery1">
+                        <li>
+                            <a href="#bank" class="waves-effect waves-light modal-trigger">
+                                <div class="p-overlay"><h5 class="inner-content">中行网银</h5></div>
+                                <img class="responsive-img" src="images/img-work-bank.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#webag" class="waves-effect waves-light modal-trigger">
+                                <div class="p-overlay"><h5 class="inner-content">WEBAG</h5></div>
+                                <img class="responsive-img" src="images/img-work-webag.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#mypage" class="waves-effect waves-light modal-trigger">
+                                <div class="p-overlay"><h5 class="inner-content">个人主页</h5></div>
+                                <img class="responsive-img" src="images/img-work-mypage.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="android" class="col s12">
+                    <ul class="img-collection hide-opacity-children" id="gallery2">
+                        <li>
+                            <a href="#clock" class="waves-effect waves-light modal-trigger">
+                                <div class="p-overlay"><h5 class="inner-content">梦想计画</h5></div>
+                                <img class="responsive-img" src="images/img-work-clock.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#community" class="waves-effect waves-light modal-trigger">
+                                <div class="p-overlay"><h5 class="inner-content">社区服务平台</h5></div>
+                                <img class="responsive-img" src="images/img-work-community.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="waves-effect waves-light modal-trigger">
+                                <div class="p-overlay"><h5 class="inner-content">一键去重</h5></div>
+                                <img class="responsive-img" src="images/img-work-contact.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Modals-->
+                <div>
+                    <div id="webag" class="modal bottom-sheet">
+                        <div class="modal-content">
+                            <h4>WEBAG</h4>
+                            <div class="col l4">
+                                <h6 class="text-bold">构架</h6>
+                                <p class="text-dot">后台：Structs + Spring + Hibernate；前端：jQueryMVC</p>
+                                <p class="text-dot">Chrome</p>
+                            </div>
+                            <div class="col l4">
+                                <h6 class="text-bold">简介</h6>
+                                <p>自动化开发工具。它可以根据需要自动生成html页面、校验规则、国际化语言以及自动化测试用例。相当于一个数据加工厂，BA将数据导入，开发和测试根据需要导出模板。</p>
+                            </div>
+                            <div class="col l4">
+                                <h6 class="text-bold">职责</h6>
+                                <p>工具的维护与新功能开发；依据需求加入正则表达式。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="bank" class="modal bottom-sheet">
+                        <div class="modal-content">
+                            <h4>中行网银</h4>
+                            <div class="col l4">
+                                <h6 class="text-bold">构架</h6>
+                                <p class="text-dot">底层Dojo 通讯ajax</p>
+                                <p class="text-dot">IE7+, Chrome, Safari, 360, Firefox, Sougou</p>
+                            </div>
+                            <div class="col l4">
+                                <h6 class="text-bold">简介</h6>
+                                <p>中国银行网上银行系统，面向个人用户的资金储存、转账、投资等业务。</p>
+                            </div>
+                            <div class="col l4">
+                                <h6 class="text-bold">职责</h6>
+                                <p>使用js和Dojo组件，对信用卡及部分投资理财功能的开发与维护。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="mypage" class="modal bottom-sheet">
+                        <div class="modal-content">
+                            <h4>个人主页</h4>
+                            <div class="col l4">
+                                <h6 class="text-bold">构架</h6>
+                                <p class="text-dot">H5 css3; materilizecss框架</p>
+                                <p class="text-dot">现代浏览器(IE10+)</p>
+                            </div>
+                            <div class="col l4">
+                                <h6 class="text-bold">简介</h6>
+                                <p>个人响应式网站。网页可根据浏览器的尺寸适配不同的布局，因此手机和电脑会有不同的体验。</p>
+                            </div>
+                            <div class="col l4">
+                                <h6 class="text-bold">职责</h6>
+                                <p>全程开发。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="clock" class="modal bottom-sheet">
+                        <div class="modal-content">
+                            <h4>梦想计画</h4>
+                            <div class="col l4">
+                                <h6 class="text-bold">构架</h6>
+                                <p class="text-dot">Android SDK</p>
+                                <p class="text-dot">3.0以上版本</p>
+                            </div>
+                            <div class="col l4">
+                                <h6 class="text-bold">简介</h6>
+                                <p>时间管理小工具。特别的是，用户可像画画那样画出自己的计划。界面清新友好。</p>
+                            </div>
+                            <div class="col l4">
+                                <h6 class="text-bold">职责</h6>
+                                <p>全程开发。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="community" class="modal bottom-sheet">
+                        <div class="modal-content">
+                            <h4>社区服务平台</h4>
+                            <div class="col l4">
+                                <h6 class="text-bold">构架</h6>
+                                <p class="text-dot">Android SDK; soap通讯</p>
+                                <p class="text-dot">2.2以上版本</p>
+                            </div>
+                            <div class="col l4">
+                                <h6 class="text-bold">简介</h6>
+                                <p>社区服务平台。社区与企业合作，居民可以通过此平台进行交易。团队接的私活，当时app和平台都搭好了，但一直都没有投产。</p>
+                            </div>
+                            <div class="col l4">
+                                <h6 class="text-bold">职责</h6>
+                                <p>全程开发。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="contact" class="modal bottom-sheet">
+                        <div class="modal-content">
+                            <h4>一键去重</h4>
+                            <div class="col l4">
+                                <h6 class="text-bold">构架</h6>
+                                <p class="text-dot">Android SDK</p>
+                                <p class="text-dot">2.2以上版本</p>
+                            </div>
+                            <div class="col l4">
+                                <h6 class="text-bold">简介</h6>
+                                <p>手机辅助软件。可以合并通讯录中重复的联系人。当时是为了做app嵌广告的实验，现在只赚了不到200块...</p>
+                            </div>
+                            <div class="col l4">
+                                <h6 class="text-bold">职责</h6>
+                                <p>全程开发。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<footer class="page-footer red darken-4">
+    <div class="container">
+        <div class="row">
+            <div>
+                <h5 class="white-text">致谢</h5>
+                <p class="grey-text text-lighten-4">我知道，你碰巧手抖了下点进来滴，还一不小心翻到了最后。呃...总之，感谢你的不小心。</p>
+                <p class="grey-text text-lighten-4">如果你对此网页感兴趣，可以在我的Github Repo里找到；要是你对我有兴趣，嘿嘿，哥只能说：请联系我！</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container center">
+            Goforu @ July. 2016
+        </div>
+    </div>
+</footer>
+
+<script src="js/lib/jquery-3.1.0.min.js" type="text/javascript"></script>
+<script src="js/lib/materialize.min.js" type="text/javascript"></script>
+<script src="js/lib/jquery.smooth-scroll.min.js" type="text/javascript"></script>
+
 <script src="js/main.js" type="text/javascript"></script>
 </body>
 </html>
