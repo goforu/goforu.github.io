@@ -5,43 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Goforu - Personal Home Page</title>
 
-    <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="css/materialdesignicons.min.css" media="all"/>
 
-    <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
-
     <link href="css/animate.min.css" rel="stylesheet">
 
-    <!--Let browser know website is optimized for mobile-->
     <link href="css/welcome.css" rel="stylesheet">
 </head>
 <body>
-
+<div id="preloader">
+    <div class="preloader-container">
+        <div class="preloader-wrapper active">
+            <div class="spinner-layer spinner-red-only">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+        <h6 class="teal-text">Loading...</h6>
+    </div>
+</div>
 <section id="home">
     <div class="navbar-fixed">
-        <nav class="red darken-4">
+        <nav class="red darken-4" id="nav">
             <div class="nav-wrapper">
                 <div class="brand-logo hide-on-med-and-down"><a href="#" class="padding-left-1">Home</a></div>
-                <a href="#" class="right hide-on-large-only"><i class="material-icons">more_vert</i></a>
                 <div><a href="#" data-activates="slide-out" class="button-collapse padding-left-2"><i
-                        class="material-icons">dehaze</i></a></div>
+                        class="mdi mdi-menu"></i></a></div>
                 <ul class="right hide-on-med-and-down padding-right-5">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Career</a></li>
+                    <li><a href="#about" class="guide">About</a></li>
+                    <li><a href="#career" class="guide">Experience</a></li>
+                    <li><a href="#skill" class="guide">Skill</a></li>
+                    <li><a href="#portfolio" class="guide">Portfolio</a></li>
                 </ul>
             </div>
         </nav>
         <ul id="slide-out" class="side-nav blue-grey lighten-5">
-            <div class="side-nav-header">
+            <li class="side-nav-header">
                 <div class="side-nav-header-content white-text">
-                    <img src="images/self-0.jpg" class="circle img-small">
+                    <img src="images/self.jpg" class="circle img-small">
                     <h6 class="text-larger">ZHOU FO YOU</h6>
                     <p>Web/App Developer</p>
                 </div>
-            </div>
-            <li><a href="#"><i class="material-icons">person</i>About</a></li>
-            <li><a href="#"><i class="material-icons">person</i>Career</a></li>
+            </li>
+            <li><a href="#about" class="guide sidebar"><i class="mdi mdi-account-circle"></i>About</a></li>
+            <li><a href="#career" class="guide sidebar"><i class="mdi mdi-stairs"></i>Career</a></li>
+            <li><a href="#skill" class="guide sidebar"><i class="mdi mdi-trophy"></i>Skill</a></li>
+            <li><a href="#portfolio" class="guide sidebar"><i class="mdi mdi-briefcase-check"></i>Portfolio</a></li>
         </ul>
     </div>
     <div class="container">
@@ -51,11 +67,11 @@
                 <h5 class="title-content"><span class="lead">Hello</span>, I'm Foyou Zhou loving DIYs.</h5>
                 <a href="#" class="btn red darken-4 margin-top btn-large">
                     <span class="padding-right-5 text-larger">HIRE ME</span> <i
-                        class="material-icons right">send</i>
+                        class="mdi mdi-send"></i>
                 </a>
             </div>
             <a href="#about" class="btn btn-floating white black-text btn-home animated infinite pulse">
-                <span class="material-icons">expand_more</span>
+                <span class="mdi mdi-chevron-down"></span>
             </a>
         </div>
     </div>
@@ -72,7 +88,7 @@
                     And scrambled it to make a type specimen book. It has survived not only five centuries
                 </p>
             </div>
-            <div class="col m6 l4 wow fadeIn">
+            <div class="col m6 l4 hide-opacity" id="self">
                 <img src="images/self.jpg" class="responsive-img card img-thumbnail"/>
             </div>
             <div class="col m6 l4">
@@ -84,9 +100,12 @@
                     <p><span>Address:</span>Foyou Zhou</p>
                 </div>
                 <ul class="horiz">
-                    <li><a href="#" class="btn btn-floating white blue-text text-darken-4">google+</a></li>
-                    <li><a href="#" class="btn btn-floating white blue-text text-darken-4">google+</a></li>
-                    <li><a href="#" class="btn btn-floating white blue-text text-darken-4">google+</a></li>
+                    <li><a href="#" class="btn btn-floating white"><i
+                            class="mdi mdi-linkedin red-text text-darken-4"></i></a></li>
+                    <li><a href="#" class="btn btn-floating white"><i
+                            class="mdi mdi-github-circle red-text text-darken-4"></i></a></li>
+                    <li><a href="#" class="btn btn-floating white"><i
+                            class="mdi mdi mdi-blogger red-text text-darken-4"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -101,41 +120,41 @@
                 <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I
                     require little markup to use effectively.</p>
             </div>
-            <div class="col l4 m6 card-container wow bounceIn">
+            <div class="col l4 m6 card-container hide-opacity" id="ibm">
                 <div class="card">
                     <div class="card-content">
-                    <span class="card-title activator">
-                        <img src="images/img-1.png" class="img-small circle left card-logo">
-                        2011-2015<i class="material-icons right">more_vert</i>
-                        <p class="text-tiny grey-text text-italic">North China Electric Power University</p>
+                   <span class="card-title activator">
+                        <img src="images/img-2.png" class="img-small circle left card-logo">
+                        2015-PRESENT<i class="mdi mdi-dots-vertical right"></i>
+                        <p class="text-tiny grey-text text-italic">International Business Machines cop.</p>
                     </span>
                     </div>
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/img-career-1.jpg">
+                        <img class="activator" src="images/img-ibm-team.jpg">
                     </div>
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4">Card Title<i
-                                class="material-icons right">close</i></span>
+                                class="mdi mdi-close right"></i></span>
                         <p>I am a very simple card. I am good at containing small bits of information. I am convenient
                             because I require little markup to use effectively.</p>
                     </div>
                 </div>
             </div>
-            <div class="col l4 m6 card-container wow bounceIn" data-wow-delay="0.3s">
+            <div class="col l4 m6 card-container hide-opacity" id="ncepu">
                 <div class="card">
                     <div class="card-content">
-                   <span class="card-title activator">
-                        <img src="images/img-2.png" class="img-small circle left card-logo">
-                        2015-PRESENT<i class="material-icons right">more_vert</i>
-                        <p class="text-tiny grey-text text-italic">International Business Machines cop.</p>
+                    <span class="card-title activator">
+                        <img src="images/img-ncepu.png" class="img-small circle left card-logo">
+                        2011-2015<i class="mdi mdi-dots-vertical right  "></i>
+                        <p class="text-tiny grey-text text-italic">North China Electric Power University</p>
                     </span>
                     </div>
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/img-career-1.jpg">
+                        <img class="activator" src="images/img-lsgo-team.jpg">
                     </div>
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4">Card Title<i
-                                class="material-icons right">close</i></span>
+                                class="mdi mdi-close right"></i></span>
                         <p>I am a very simple card. I am good at containing small bits of information. I am convenient
                             because I require little markup to use effectively.</p>
                     </div>
@@ -155,8 +174,8 @@
                     in utilizing all resources.</p>
             </div>
             <div class="col l8 fill-parent">
-                <ul>
-                    <li class="wow slideInRight">
+                <ul id="skillBar">
+                    <li class="hide-opacity">
                         <h6 class="text-italic">javascript</h6>
                         <div class="progress" data-tooltip="70%">
                             <div class="determinate" id="js">
@@ -165,7 +184,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="wow slideInRight">
+                    <li class="hide-opacity">
                         <h6 class="text-italic">html</h6>
                         <div class="progress" data-tooltip="70%">
                             <div class="determinate" id="html">
@@ -173,7 +192,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="wow slideInRight">
+                    <li class="hide-opacity">
                         <h6 class="text-italic">css</h6>
                         <div class="progress" data-tooltip="70%">
                             <div class="determinate" id="css">
@@ -181,15 +200,15 @@
                             </div>
                         </div>
                     </li>
-                    <li class="wow slideInRight">
+                    <li class="hide-opacity">
                         <h6 class="text-italic">android</h6>
                         <div class="progress" data-tooltip="70%">
-                            <div class="determinate" id="android">
+                            <div class="determinate">
                                 <div class="text-smaller card red white-text badge-tooltips">50%</div>
                             </div>
                         </div>
                     </li>
-                    <li class="wow slideInRight">
+                    <li class="hide-opacity">
                         <h6 class="text-italic">java</h6>
                         <div class="progress" data-tooltip="70%">
                             <div class="determinate" id="java">
@@ -197,7 +216,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="wow slideInRight">
+                    <li class="hide-opacity">
                         <h6 class="text-italic">photoshop</h6>
                         <div class="progress" data-tooltip="70%">
                             <div class="determinate" id="photoshop">
@@ -214,52 +233,143 @@
 <section id="portfolio" class="padding-1">
     <div class="container">
         <div class="row">
-            <h4 class="center">Portfolio</h4>
-            <ul class="collapsible popout" data-collapsible="expandable">
-                <li>
-                    <div class="collapsible-header"><i class="material-icons">android</i>Android</div>
-                    <div class="collapsible-body">
-                        <div class="card col l3 z-depth-0">
-                            <div class="card-image waves-effect waves-block waves-teal">
-                                <img class="activator" src="images/img-bank.png">
+            <h3 class="center grey-text">Portfolio</h3>
+            <div class="row">
+                <div class="col l4 m8 s12 margin-bottom-5">
+                    <ul class="tabs">
+                        <li class="tab"><a href="#all">All</a></li>
+                        <li class="tab"><a href="#web"><i class="mdi mdi-internet-explorer"> Web</i></a></li>
+                        <li class="tab"><a href="#android"><i class="mdi mdi-android"></i> Android</a></li>
+                    </ul>
+                </div>
+                <div id="all" class="col s12">
+                    <ul class="img-collection hide-opacity-children" id="gallery">
+                        <li>
+                            <a href="#bank" class="waves-effect waves-light modal-trigger">
+                                <div class="p-overlay"><h5 class="inner-content">Item</h5></div>
+                                <img class="responsive-img" src="images/img-work-bank.jpg">
+                            </a>
+                            <div id="bank" class="modal bottom-sheet">
+                                <div class="modal-content">
+                                    <h4>Modal Header</h4>
+                                    <p>A bunch of text</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                                </div>
                             </div>
-                            <div class="card-content">
-                                <a href="#">The Bank of China</a>
+                        </li>
+                        <li>
+                            <a href="#webag" class="waves-effect waves-light modal-trigger">
+                                <div class="p-overlay"><h5 class="inner-content">Item</h5></div>
+                                <img class="responsive-img" src="images/img-work-webag.jpg">
+                            </a>
+                            <div id="webag" class="modal bottom-sheet">
+                                <div class="modal-content">
+                                    <h4>Modal Header</h4>
+                                    <p>A bunch of text</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                                </div>
                             </div>
-                            <div class="card-reveal">
-                                <span class="card-title grey-text text-darken-4">Card Title<i
-                                        class="material-icons right">close</i></span>
-                                <p>Here is some more information about this product that is only revealed once clicked
-                                    on.</p>
+                        </li>
+                        <li>
+                            <a href="#mypage" class="waves-effect waves-light modal-trigger">
+                                <div class="p-overlay"><h5 class="inner-content">Item</h5></div>
+                                <img class="responsive-img" src="images/img-work-mypage.jpg">
+                            </a>
+                            <div id="mypage" class="modal bottom-sheet">
+                                <div class="modal-content">
+                                    <h4>Modal Header</h4>
+                                    <p>A bunch of text</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card col l3 z-depth-0">
-                            <div class="card-image waves-effect waves-block waves-teal">
-                                <img class="activator" src="images/img-jquery.jpg">
+                        </li>
+                        <li>
+                            <a href="#clock" class="waves-effect waves-light modal-trigger">
+                                <div class="p-overlay"><h5 class="inner-content">Item</h5></div>
+                                <img class="responsive-img" src="images/img-work-clock.jpg">
+                            </a>
+                            <div id="clock" class="modal bottom-sheet">
+                                <div class="modal-content">
+                                    <h4>Modal Header</h4>
+                                    <p>A bunch of text</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                                </div>
                             </div>
-                            <div class="card-content">
-                                <a href="#">JQuery Plugin</a>
+                        </li>
+                        <li>
+                            <a href="#community" class="waves-effect waves-light modal-trigger">
+                                <div class="p-overlay"><h5 class="inner-content">Item</h5></div>
+                                <img class="responsive-img" src="images/img-work-community.jpg">
+                            </a>
+                            <div id="community" class="modal bottom-sheet">
+                                <div class="modal-content">
+                                    <h4>Modal Header</h4>
+                                    <p>A bunch of text</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                                </div>
                             </div>
-                            <div class="card-reveal">
-                                <span class="card-title grey-text text-darken-4">Card Title<i
-                                        class="material-icons right">close</i></span>
-                                <p>Here is some more information about this product that is only revealed once clicked
-                                    on.</p>
+                        </li>
+                        <li>
+                            <a href="#contact" class="waves-effect waves-light modal-trigger">
+                                <div class="p-overlay"><h5 class="inner-content">Item</h5></div>
+                                <img class="responsive-img" src="images/img-work-contact.jpg">
+                            </a>
+                            <div id="contact" class="modal bottom-sheet">
+                                <div class="modal-content">
+                                    <h4>Modal Header</h4>
+                                    <p>A bunch of text</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="collapsible-header"><i class="material-icons">web</i>Web</div>
-                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                </li>
-                <li>
-                    <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                </li>
-            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="web" class="col s12">Test 2</div>
+                <div id="android" class="col s12">Test 3</div>
+            </div>
         </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
+
 </section>
+
+<footer class="page-footer red darken-4">
+    <div class="container">
+        <div class="row">
+            <div>
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+    </div>
+</footer>
 
 <script src="js/lib/jquery-3.1.0.min.js" type="text/javascript"></script>
 <script src="js/lib/materialize.min.js" type="text/javascript"></script>
