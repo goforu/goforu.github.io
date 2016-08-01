@@ -23,7 +23,6 @@
         //observe nav bar
         //监视导航栏
         observeNavBarHidden();
-        //parallaxMoon();
     });
 
 
@@ -131,18 +130,6 @@
                 isUp = false;
             }
             previousScroll = currentScroll;
-        });
-    }
-
-    function parallaxMoon() {
-        var $el = $('.overlay-moon');
-        var previousScroll = $el.scrollTop();
-        $(window).scroll(function () {
-            var afterScroll = previousScroll + ($el.scrollTop()-previousScroll)/3;
-            $el.css({
-                top:afterScroll
-            });
-            previousScroll = afterScroll;
         });
     }
 })(jQuery);

@@ -366,6 +366,14 @@ ul.horiz li {
     transform: scale(1.6);
 }
 
+a.link{
+    color: #B71C1C;
+}
+a.link:active,
+a.link:visited
+{
+    color: teal;
+}
 
 /*animation*/
 @-webkit-keyframes slideInUp {
