@@ -1,4 +1,7 @@
 /*General*/
+html{
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
+}
 html,
 body {
     height: 100%;
@@ -48,6 +51,10 @@ h2, h3 {
 
 .text-larger {
     font-size: 120%;
+}
+
+.text-huge-larger {
+    font-size: 150%;
 }
 
 .text-smaller {
@@ -228,6 +235,10 @@ h2, h3 {
     font-size: 120%;
 }
 
+.mdi-pokeball{
+    font-size: 2rem !important;
+    margin-left: 10px !important;
+}
 /*about*/
 .info-header {
     font-weight: bold;
@@ -573,7 +584,70 @@ a.link:visited {
     animation-name: shine
 }
 
+@-webkit-keyframes tada {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
 
+    10%, 20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    }
+
+    30%, 50%, 70%, 90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+
+    40%, 60%, 80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes tada {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    10%, 20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    }
+
+    30%, 50%, 70%, 90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+
+    40%, 60%, 80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.tada {
+    -webkit-animation-name: tada;
+    animation-name: tada;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    /*-webkit-animation-fill-mode: both;*/
+    /*animation-fill-mode: both;*/
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
 /*large screen only*/
 @media only screen and (min-width: 993px) {
     .hide-opacity {
