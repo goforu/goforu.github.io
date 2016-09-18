@@ -1,7 +1,7 @@
 # PERSONAL RESUME #
 
 This is my personal resume. It's a responsive web page comes with many amazing effects.
-Thanks to the **Materializecss Team** from Carnegie Mellon University and also to the **animate.css** creator.
+Thanks to the **Materializecss Team** from Carnegie Mellon University and also to the **animate.css** author.
 
 ### Framework Involved ###
 [Materializecss](http://materializecss.com/about.html): A powerful responsive framework starting from 2014. Because of its new birth, it is problematic somewhere.  
