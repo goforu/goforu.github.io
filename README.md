@@ -1,15 +1,15 @@
 # PERSONAL RESUME #
 
-This is my personal resume. It's a responsive web page comes with many amazing effects.
-Thanks to the **Materializecss Team** from Carnegie Mellon University and also to the **animate.css** author.
+It is my profile, a responsive web page comes with many amazing effects.
+Thanks to the **Materializecss Team** from Carnegie Mellon University and the creater of **animate.css**.
 
 ### Framework Involved ###
-[Materializecss](http://materializecss.com/about.html): A powerful responsive framework starting from 2014. Because of its new birth, it is problematic somewhere.  
-[Materialdesignicons](https://materialdesignicons.com/): It is where I look for icons.  
-[Animate.css](https://daneden.github.io/animate.css/): It has many amazing animations. But I just used a few of them, so I copied some styles to my style sheet.  
+[Materializecss](http://materializecss.com/about.html): A powerful responsive framework given birth in 2014.
+[Materialdesignicons](https://materialdesignicons.com/): Website in which I look for icons.  
+[Animate.css](https://daneden.github.io/animate.css/): So many amazing css animations
 
 ### Notice ###
-If you like this repo, please feel free to download or fork. But any form of commercial uses is not allowed. I'd be appreciated if you could report issues.
+If you like this repo, please feel free to download or fork. But any kind of commercial usage is forbidden. 
 _______________________________________________________________________________________
 #个人简历#
 这是我的个人简历。 ——响应式网页还有很多炫酷的效果。感谢来自卡内基梅隆大学**Materializecss**团队以及**animate.css**的作者。
